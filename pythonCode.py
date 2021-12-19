@@ -1,5 +1,5 @@
 class Solution:
-    def addOperators(self, num: str, target: int) -> List[str]:
+    def addOperators(self, num: str, target: int):
         def backTrack(index, pre, cur, value, s):
             if index == n:
                 if value == target and cur == 0:
@@ -18,7 +18,3 @@ class Solution:
         ans = []
         backTrack(0, 0, 0, 0, "")
         return ans
-
-
-# O (N * 4 ^ N)
-# O (4 ^ N
